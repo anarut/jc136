@@ -36,6 +36,29 @@ public class Main {
             }
             System.out.println();
         }
+
+        System.out.println();
+        l = 7;
+        for (int c = 0; c < l; c++) {
+            for (int x = l - c; x > 0; x--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        int k = 5;
+        for (int c = 0; c < k; c++) {
+            for (int x = 0; x < c + k; x++) {
+                if (c + x + 1 < k) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
     }
 
 }
