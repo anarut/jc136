@@ -61,5 +61,16 @@ public class MainEx {
         }
         System.out.println(Arrays.toString(arrNeg));
         System.out.println(Arrays.toString(arrPos));
+
+        int[][] array = new int[3][];
+        array[0] = new int[5];
+        array[1] = new int[2];
+        array[2] = new int[0];
+
+        int[][][][][] a2 = new int[1][1][1][1][1];
+
+        int i = a2[0][0][0][0][0];
+
+
     }
 }
