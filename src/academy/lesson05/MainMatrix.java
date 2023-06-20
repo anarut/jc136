@@ -1,12 +1,15 @@
 package academy.lesson05;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class MainMatrix {
 
+    static final double PI = 3.14;
+
     public static void main(String[] args) {
         //Найти строку матрицы с максимальной суммой элементов.
-        int n = 3;
+        final int n = new Random().nextInt(10);
         int m = 3;
         int[][] arr = new int[n][m];
         for (int i = 0; i < arr.length; i++) {
@@ -29,5 +32,11 @@ public class MainMatrix {
             }
         }
         System.out.println(pos);
+
+
+
+        int[] a = new int[10];
+        Arrays.fill(a, 3);
+
     }
 }
