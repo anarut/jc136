@@ -77,10 +77,10 @@ public class Main {
 
         Cyborg cyborg = new Cyborg();
 
-        Speakable[] list = {parrot, human, cyborg};
+        Speakable[] array = {parrot, human, cyborg};
 
         System.out.println("-------");
-        for (Speakable s : list) {
+        for (Speakable s : array) {
             s.speak();
         }
     }
