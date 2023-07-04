@@ -15,5 +15,10 @@ public class StringMain {
         for (char ch : chars) {
             System.out.println((int)ch);
         }
+
+        String[] split = "asdfasgmadklga".split("[a,g]+");
+        Integer a;
+
+
     }
 }
