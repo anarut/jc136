@@ -9,7 +9,7 @@ import java.util.List;
 public class ListMain {
 
     public static void main(String[] args) {
-        List<Point> points = new LinkedList<>();
+        List<Point> points = new ArrayList<>();
         points.add(new Point(2,3));
         points.add(new Point(5, 7));
         System.out.println(points);
