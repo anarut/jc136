@@ -1,7 +1,12 @@
 package academy.lesson07;
 
-public class Point {
+public class Point implements Comparable<Point> {
 
+
+    //x^2 + y^2
+    //|x| + |y|
+    // x    y
+    // y    x
     private int x;
     private int y;
 
@@ -41,6 +46,23 @@ public class Point {
     @Override
     public String toString() {
         return "(" + x +", " + y + ")";
+    }
+
+    @Override
+    public int compareTo(Point p) {
+        int v1 = x * x + y * y;
+        int v2 = p.x * p.x + p.y * p.y;
+//        if (v1 == v2) {
+//            return 0;
+//        } else if (v1 > v2) {
+//            return 1;
+//        } else {
+//            return -1;
+//        }
+
+//        return v1 == v2 ? 0 : v1 > v2 ? 1 : -1;
+
+        return Integer.compare(v1, v2);
     }
 
 //    @Override
