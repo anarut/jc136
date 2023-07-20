@@ -1,5 +1,7 @@
 package academy.lesson03;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LuckyNumber {
@@ -21,16 +23,23 @@ public class LuckyNumber {
     public static void game(int res) {
         System.out.println("Введите число:");
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
+        try {
+            int x = scanner.nextInt();
 
-        if (x > res) {
-            System.out.println("меньше"); // 1
+            if (x > res) {
+                System.out.println("меньше"); // 1
+                game(res);
+            } else if (x == res) {
+                System.out.println("угадал"); // 2
+            } else {
+                System.out.println("больше"); // 3
+                game(res);
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Вы ввели не число! Попробуйте еще раз");
             game(res);
-        } else if (x == res) {
-            System.out.println("угадал"); // 2
-        } else {
-            System.out.println("больше"); // 3
-            game(res);
+//        } finally {
+//            System.out.println("ok");
         }
     }
 

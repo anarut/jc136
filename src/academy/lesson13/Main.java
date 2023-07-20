@@ -21,7 +21,7 @@ public class Main {
         points.add(new Point(-2, 9));
         points.add(new Point(-3, 6));
         System.out.println(points);
-        Collections.sort(points);
+//        Collections.sort(points);
         System.out.println(points);
         Collections.sort(points, new PointComparator());
         System.out.println(points);
