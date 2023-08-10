@@ -29,9 +29,9 @@ public class CredentialsMain {
                 System.out.println(c);
             }
 
-            if (o2 instanceof Credentials c) {
-                System.out.println(c);
-            }
+//            if (o2 instanceof Credentials c) {
+//                System.out.println(c);
+//            }
         }
     }
 

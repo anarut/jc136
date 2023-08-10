@@ -16,12 +16,12 @@ public class Main {
         Map<String, String> getenv = System.getenv();
         Set<Map.Entry<String, String>> entries = getenv.entrySet();
         for (Map.Entry<String, String> entry : entries) {
-            System.out.println("%s = %s".formatted(entry.getKey(), entry.getValue()));
+//            System.out.println("%s = %s".formatted(entry.getKey(), entry.getValue()));
         }
 
 
         Properties properties = System.getProperties();
-        properties.forEach((o, o2) -> System.out.println("%s = %s".formatted(o, o2)));
+//        properties.forEach((o, o2) -> System.out.println("%s = %s".formatted(o, o2)));
         FileOutputStream fileOutputStream = null;
         String name = "test_file.txt";
         try {
@@ -40,9 +40,9 @@ public class Main {
 
 
         try (FileInputStream fis = new FileInputStream(name)) {
-            byte[] bytes = fis.readAllBytes();
-            String s = new String(bytes);
-            System.out.println(s);
+//            byte[] bytes = fis.readAllBytes();
+//            String s = new String(bytes);
+//            System.out.println(s);
         } catch (IOException e) {
             e.printStackTrace();
         }

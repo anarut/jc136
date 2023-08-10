@@ -15,10 +15,10 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        List<Integer> integers = List.of(1, 2, 2, 4, 5, 6, 78, 89, 9);
+//        List<Integer> integers = List.of(1, 2, 2, 4, 5, 6, 78, 89, 9);
         Stream<Integer> integerStream = Stream.of(43, 123, 123, 12, 123, 12, 31, 23, 123, 12, 312);
 
-        Stream<Integer> concat = Stream.concat(integerStream, integers.stream());
+//        Stream<Integer> concat = Stream.concat(integerStream, integers.stream());
 
 
         // h e l l o k i t t y world
@@ -41,12 +41,12 @@ public class Main {
         int page = 58;
         int pageSize = 30;
 
-        List<String> strings = List.of("", ""); // много значений (2282)
+//        List<String> strings = List.of("", ""); // много значений (2282)
         // 58 стр
-        List<String> collect2 = strings.stream()
-                .skip((page - 1) * pageSize)
-                .limit(pageSize)
-                .collect(Collectors.toList());
+//        List<String> collect2 = strings.stream()
+//                .skip((page - 1) * pageSize)
+//                .limit(pageSize)
+//                .collect(Collectors.toList());
 
 
         /*
@@ -89,7 +89,7 @@ public class Main {
 
 
 
-        System.out.println(reduce1.orElseThrow());
+//        System.out.println(reduce1.orElseThrow());
 
         Stream<Point> pointStream3 = Stream.of(
                 new Point(1, 4),

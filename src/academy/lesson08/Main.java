@@ -34,9 +34,9 @@ public class Main {
             Dove doveAgain = (Dove) animal;
         }
 
-        if (animal instanceof Dove doveAgain) {
-            doveAgain.poop();
-        }
+//        if (animal instanceof Dove doveAgain) {
+//            doveAgain.poop();
+//        }
 
         Bird bird = dove1;
 
